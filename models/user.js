@@ -1,29 +1,26 @@
 /** User class for message.ly */
 
-
-
 /** User of the site. */
 
 class User {
-
   /** register new user -- returns
    *    {username, password, first_name, last_name, phone}
    */
 
-  static async register({username, password, first_name, last_name, phone}) { }
+  static async register({ username, password, first_name, last_name, phone }) {}
 
   /** Authenticate: is this username/password valid? Returns boolean. */
 
-  static async authenticate(username, password) { }
+  static async authenticate(username, password) {}
 
   /** Update last_login_at for user */
 
-  static async updateLoginTimestamp(username) { }
+  static async updateLoginTimestamp(username) {}
 
   /** All: basic info on all users:
    * [{username, first_name, last_name, phone}, ...] */
 
-  static async all() { }
+  static async all() {}
 
   /** Get: get user by username
    *
@@ -34,7 +31,7 @@ class User {
    *          join_at,
    *          last_login_at } */
 
-  static async get(username) { }
+  static async get(username) {}
 
   /** Return messages from this user.
    *
@@ -44,7 +41,7 @@ class User {
    *   {username, first_name, last_name, phone}
    */
 
-  static async messagesFrom(username) { }
+  static async messagesFrom(username) {}
 
   /** Return messages to this user.
    *
@@ -54,8 +51,9 @@ class User {
    *   {username, first_name, last_name, phone}
    */
 
-  static async messagesTo(username) { }
+  static async messagesTo(username) {}
 }
 
+// ==================================================
 
 module.exports = User;
